@@ -3,7 +3,7 @@
 function getPassword()
 {
     $symbols = '!?&%$<>^+-*/()[]{}@#_=';
-    $letters = 'abcdefghijklmnopqrstwyxz';
+    $letters = 'abcd';
     $upperCaseLetters = strtoupper($letters);
     $numbers = '0123456789';
 
@@ -13,7 +13,13 @@ function getPassword()
         while (strlen($password) < $passwordLength) {
             $allItems = $symbols . $letters . $upperCaseLetters . $numbers;
             $randItem = $allItems[rand(0, strlen($allItems) - 1)];
-            $password .= $randItem;
+            if ($_GET["ripetizione"] === 'no') {
+                if (!strpos($password, $randItem)) {
+                    $password .= $randItem;
+                }
+            } else {
+                $password .= $randItem;
+            }
         }
         // var_dump($password);
         $_SESSION['password'] = $password;

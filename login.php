@@ -1,9 +1,6 @@
 <?php
 include __DIR__ . "/partials/header.php";
 $error = getPassword();
-if (isset($_GET["ripetizione"])) {
-    $ripetizione = $_GET["ripetizione"];
-}
 ?>
 
 <main class="container mt-3">
