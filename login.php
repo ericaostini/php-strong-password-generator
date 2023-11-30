@@ -10,9 +10,6 @@ getPassword();
         <button type="submit">Genera</button>
         <button type="reset">Reset</button>
     </form>
-    <div>
-        <?php echo $_GET["passwordLength"] ?>
-    </div>
 </main>
 
 <?php

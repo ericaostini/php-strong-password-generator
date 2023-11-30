@@ -16,7 +16,8 @@ function getPassword()
             $password .= $randItem;
         }
         // var_dump($password);
-
+        $_SESSION['password'] = $password;
+        header('Location: index.php');
         return $password;
     }
 }
