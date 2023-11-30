@@ -7,7 +7,7 @@ if (!isset($_SESSION["password"])) {
 ?>
 
 <main class="container">
-    <div>
+    <div class="alert alert-success">
         <?php echo $_SESSION['password'] ?>
     </div>
 </main>
