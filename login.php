@@ -26,6 +26,24 @@ $error = getPassword();
                 No
             </label>
         </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="lettere" name="caratteri[]">
+            <label class="form-check-label">
+                Lettere
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="numeri" name="caratteri[]">
+            <label class="form-check-label">
+                Numeri
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="caratteri" name="caratteri[]">
+            <label class="form-check-label">
+                Simboli
+            </label>
+        </div>
     </form>
 </main>
 
