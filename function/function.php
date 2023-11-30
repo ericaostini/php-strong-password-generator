@@ -15,7 +15,8 @@ function getPassword()
             $randItem = $allItems[rand(0, strlen($allItems) - 1)];
             $password .= $randItem;
         }
-        var_dump($password);
+        // var_dump($password);
+
         return $password;
     }
 }

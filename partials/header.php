@@ -1,3 +1,10 @@
+<?php
+session_start();
+include __DIR__ . "/../function/function.php";
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 

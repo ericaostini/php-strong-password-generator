@@ -1,6 +1,5 @@
 <?php
 include __DIR__ . "/partials/header.php";
-include __DIR__ . "/function/function.php";
 getPassword();
 ?>
 
@@ -11,6 +10,9 @@ getPassword();
         <button type="submit">Genera</button>
         <button type="reset">Reset</button>
     </form>
+    <div>
+        <?php echo $_GET["passwordLength"] ?>
+    </div>
 </main>
 
 <?php
