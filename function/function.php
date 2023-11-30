@@ -7,7 +7,7 @@ function getPassword()
     $upperCaseLetters = strtoupper($letters);
     $numbers = '0123456789';
 
-    if (isset($_GET["passwordLength"])) {
+    if (isset($_GET["passwordLength"]) && $_GET["passwordLength"] > 6 && $_GET["passwordLength"] < 20) {
         $passwordLength = $_GET['passwordLength'];
         $password = '';
         while (strlen($password) < $passwordLength) {
@@ -20,6 +20,7 @@ function getPassword()
         header('Location: index.php');
         return $password;
     }
+    return false;
 }
 
 ?>
